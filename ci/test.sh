@@ -10,10 +10,5 @@ python -c "import numpy; print('numpy %s' % numpy.__version__)"
 root -l -q
 python -c "import ROOT; ROOT.TBrowser()"
 
-# Check that rootpy can be imported
-time python -c 'import rootpy'
-# What if ROOT has already been initialized?
-time python -c 'from ROOT import kTRUE; import rootpy'
-
 time nosetests
 
